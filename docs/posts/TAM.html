@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Iker Apraiz">
-<meta name="description" content="¿De dónde viene el valor del dinero? ¿Cómo podemos saber cuanto vale el trabajo que realiza una enfermera? Son preguntas importantes que nos hacemos casi todos los días. Sin embargo, sus repuestas puede que no sean tan claras como imaginamos…">
+<meta name="description" content="Siempre hemos escuchado cómo la unión hace la fuerza. Si bien es cierto que la expresión puede funcionar en tareas grupales ¿Es aplicable tambíen a los parámetros clínicos? ¿Es aplicable a la metodología enfermera?">
 
-<title>Poderoso caballero es Don Dinero – Metodología de la enfermería</title>
+<title>La unión hace la fuerza – Metodología de la enfermería</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,6 +77,35 @@ ul.task-list li input[type="checkbox"] {
 }
 </style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -141,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Poderoso caballero es Don Dinero</h1>
+<h1 class="title">La unión hace la fuerza</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Reflexión</div>
   </div>
@@ -149,7 +178,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    <p>¿De dónde viene el valor del dinero? ¿Cómo podemos saber cuanto vale el trabajo que realiza una enfermera? Son preguntas importantes que nos hacemos casi todos los días. Sin embargo, sus repuestas puede que no sean tan claras como imaginamos…</p>
+    <p>Siempre hemos escuchado cómo la unión hace la fuerza. Si bien es cierto que la expresión puede funcionar en tareas grupales ¿Es aplicable tambíen a los parámetros clínicos? ¿Es aplicable a la metodología enfermera?</p>
   </div>
 </div>
 
@@ -166,7 +195,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Fecha de publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">25 de febrero de 2026</p>
+      <p class="date">5 de marzo de 2026</p>
     </div>
   </div>
   
@@ -181,20 +210,33 @@ ul.task-list li input[type="checkbox"] {
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="justify">
-<p>Puede que la creación del concepto “dinero” sea uno de los grandes logros de la humanidad. Se trata de un concepto abstracto, universal y otorga, paradogicamente, una cuantificación al valor de todo aquello que nos rodea (entendido valor como la importancia que creemos que tiene dichos objetos o ideas).</p>
+<p>La tensión arterial puede que sea una de las mediciones clínicas más básicas y también de las más incompredidas de la sanidad. El público general y los sanitarios en particular son conocedores de que se encuentra compuesta por dos valores: sístole y la diástole.</p>
 </div>
 </div><div class="column" style="text-align: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="imagenes/dinero.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+<p><img src="imagenes/TAM.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
 </figure>
 </div>
 </div>
 </div>
 <div class="justify">
-<p>Lo curioso del dinero es que no nos sirve unicamente para cosas materiales sino que puede ser utilizado para medir el valor de cosas inmateriales (esfuerzo,dolor o salud). Sin embargo, para que el dinero tenga sentido y sea funcional, debe cumplir ciertas condiciones, a saber: Debe poder ser comparable y debe ser aceptado por todos como instrumento de medida. Sin esas condiciones el concepto del dinero pierde su esencia y no podría ser utilizado. En cierta medida, el dinero ese ese “árbitro” que rige de forma inmaterial todo aquello que el ser humano produce y procesa a lo largo de su vida.</p>
-<p>Con todo ello, nos surgen algunas dudas que podemos trasladar a nuestro ámbito (la metodología enfermera). ¿Cómo podemos medir el “valor” que generan nuestros diagnósticos e intervenciones? ¿Cómo podemos lograr que esas mediciones sean iguales y comparables para todo el mundo? Sabemos que sin el instrumento de medida del dinero el mundo no podría funcionar y, por analogía, sin la medición de los resultados enfermeras la metodología enfermera no podría funcionar.</p>
+<p>A su vez, todos conocemos como una tensión alrededor de 120/70 es una tensión ajustada a la normalidad. Finalmente, todos interpretaríamos tensiones de 40/20 o 250/120 como valores peligrosos y nos podríamos hacer una idea de lo que esta ocurriendo en el sistema vascular. Sin embargo, si una tensión tiene valores de 250/20 ¿Qué tipo de interpretación daríamos?</p>
+<p>Para comprender un valor de 250/20 tenemos que comenzar por entender el significado real de los valores sístoles y diástole. Durante el proceso de “toma de tensión” un esfingomanómetro es colocado rodeando una arteria. El dispositivo se llena de aire ejercienco una presión sobre la arteria y colpasándola (cerrandola por completo). Inmediatamente después, el dispositivo se comienza a desinflar reduciendo la presión ejercica sobre la arteria. Durante ese proceso, la sangre intenta transcurrir por la arteria colapsada impulsada por la fuerza contractil del corazón. En el momento que la fuerza contractil del corazón es mayor que la presión ejercica por el dispositivo, la sangre logra pasar por la arteria: la presión sistólica. Sin embargo, el corazón genera un impulso único (la contracción del ventrículo) pero ese impulso no es puntual; es decir: la sangre coge “velocidad al contraerse el corazón” y va perdiendo velocidad hasta que el corazón vuelve a contraerse. A medida que el esfingomanómetro se desinfla, pierde presión sobre la arteria. Antes aunque la fuerza ejercicida por la presión del corazón en su punto máximo vencia a la presión del esfingomanómetro, entre contracción y contracción la presión del esfingomanómetro era superior. Sin embargo, al continuar desinflandose llega un punto donde la presión del esfingomanómetro es menor que la presión (“velocidad”) más baja de la sangre entre contracción y contracción: la presión diastólica.</p>
+<p>Esta explicación nos puede hacer pensar la siguiente reflexión: Si el objetivo de “impulsar sangre” por el organismo es lograr perfundir de sangre los tejidos ¿es mejor que la sangre llegue a mucha velocidad o que llegue mas lejes (aunque con una velocidad inferior)? Es decir ¿Es mejor una tensión sistólica alta o una tensión diastólica alta?</p>
+<p>Para solucionar este problema podemos recurrir a lo que se conoce como tensión arterial media. Su definición sería algo así como: <em>“Si la sangre en vez de ser pulsatil (acelerarse con la contracicón del ventriculo y perder velocidad hasta la siguiente contracción) fuese un flujo continuo con una velocidad constante (como el aguda de una tubería) ¿Qué tensión (velocidad) tendría?”</em>. En este caso, el ser una “velocidad constante” solo tendríamos un parámetro. Su formula es la siguiente:</p>
+<p><span class="math display">\[
+TAM = (PAS + 2* PAD)/3
+\]</span></p>
 </div>
+<p>Es lo que se conoce como una media geométrica. Al realizar este cálculo tenemos solo un valor no dos. Esto nos permite valorar el tipo de situaciones que hemos comentado el principio:</p>
+<ul>
+<li>250/20 -&gt; PAM: 97</li>
+<li>150/20 -&gt; PAM: 63</li>
+<li>120/30 -&gt; PAM: 60</li>
+</ul>
+<p>Esta fórmula nos indica la perfusión real de los tejidos. Como se puede ver, aunque haya mucha “velocidad de inicio” si luego no se mantiene entre contracción y contracción no nos ayuda mucho. En términos generales, la PAM debe encontrarse entre 70 y 110 mmHg.</p>
+<p>Como acabamos de ver, cuando nos centramos en los indicadores de resultado (estado circulatorio en este caso) podemos seleccionar vários indicadores. Pero la elección de un buen indicador es clave para obtener la mayor información ¿haríamos uso de dos indicadores que se encuentran relacionados o intentariamos “unirlos” para lograr un indicador más completo y fácil de leer?</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Para reflexionar...">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -206,16 +248,16 @@ Para reflexionar…
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>¿Cuál es el sentido de medir tus intervenciones?</li>
-<li>¿Cómo realizamos esas mediciones?</li>
-<li>¿Qué requisitos deben cumplir esas mediciones?</li>
-<li>¿Qué podría ocurrir si no midiesemos nada?</li>
+<li>¿Qué criterio seguiremos para elegir los indicadores de los resultados NOC?</li>
+<li>¿Qué es lo que se puede hacer cuando dos indicadores se encuentran relacionados?</li>
+<li>¿Es el indicador PAM un indicador real o ha sido creado a partir de dos indicadores reales?</li>
+<li>¿Tiene alguna importancia la naturaleza del indicador PAM?</li>
 </ul>
 </div>
 </div>
 <section id="comentarios" class="level2 unlisted comments">
 <h2 class="unlisted comments anchored" data-anchor-id="comentarios">Comentarios</h2>
-<script src="https://utteranc.es/client.js" repo="ikerapraiz-deusto/Metodologia_enfermera" issue-number="5" label="Comentar" theme="github-dark" crossorigin="anonymous" async="">
+<script src="https://utteranc.es/client.js" repo="ikerapraiz-deusto/Metodologia_enfermera" issue-number="7" label="Comentar" theme="github-dark" crossorigin="anonymous" async="">
 </script>
 
 
